@@ -1,4 +1,4 @@
-package dev.bytebrewer.clicksendmockserver.model.entity
+package dev.bytebrewer.clicksendmockserver.sms.model.entity
 
 import org.springframework.data.annotation.Id
 

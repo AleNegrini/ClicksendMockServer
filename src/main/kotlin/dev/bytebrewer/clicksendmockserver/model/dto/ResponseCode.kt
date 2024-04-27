@@ -1,0 +1,29 @@
+package dev.bytebrewer.clicksendmockserver.model.dto
+
+/**
+ * Reference link https://developers.clicksend.com/docs/rest/v3/#application-status-codes
+ */
+enum class ResponseCode {
+    SUCCESS,
+    MISSING_CREDENTIALS,
+    ACCOUNT_NOT_ACTIVATED,
+    INVALID_RECIPIENT,
+    THROTTLED,
+    INVALID_SENDER_ID,
+    INSUFFICIENT_CREDIT,
+    INVALID_CREDENTIALS,
+    COUNTRY_NOT_ENABLED,
+    ALREADY_EXISTS,
+    EMPTY_MESSAGE,
+    TOO_MANY_RECIPIENTS,
+    MISSING_REQUIRED_FIELDS,
+    INVALID_SCHEDULE,
+    NOT_ENOUGH_PERMISSION_TO_LIST_ID,
+    INTERNAL_ERROR,
+    INVALID_LANG,
+    INVALID_VOICE,
+    SUBJECT_REQUIRED,
+    INVALID_MEDIA_FILE,
+    SOMETHING_IS_WRONG,
+    REGISTRATION_NEEDED
+}

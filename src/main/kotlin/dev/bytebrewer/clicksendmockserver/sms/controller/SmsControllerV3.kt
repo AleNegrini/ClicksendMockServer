@@ -1,10 +1,11 @@
-package dev.bytebrewer.clicksendmockserver.controller.sms
+package dev.bytebrewer.clicksendmockserver.sms.controller
 
-import dev.bytebrewer.clicksendmockserver.model.dto.SendSmsRequestBody
+import dev.bytebrewer.clicksendmockserver.sms.model.payload.SendSmsRequestBody
+import dev.bytebrewer.clicksendmockserver.sms.model.payload.SendSmsResponse
+import dev.bytebrewer.clicksendmockserver.sms.service.SmsService
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
-import jakarta.validation.Valid
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
@@ -12,18 +13,20 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("v3/sms")
-class SmsControllerV3 {
+class SmsControllerV3(
+    val smsService: SmsService
+) {
 
     @Operation(summary = "Send SMS")
     @ApiResponses(
         value = [
             ApiResponse(
                 responseCode = "200",
-                description = "SUCCESS. Message added to queue OK",
+                description = "Message added to queue OK",
             ),
             ApiResponse(
                 responseCode = "400",
-                description = "BAD_REQUEST. The request was invalid or cannot be otherwise served. " +
+                description = "The request was invalid or cannot be otherwise served. " +
                         "An accompanying error message will explain further."
             ),
             //TODO fill missing codes
@@ -32,8 +35,6 @@ class SmsControllerV3 {
         ]
     )
     @PostMapping("send")
-    fun sendSms(@Valid @RequestBody sendSmsRequest: SendSmsRequestBody) {
-        println("Send")
-    }
+    fun sendSms(@RequestBody sendSmsRequestBody: SendSmsRequestBody): SendSmsResponse = smsService.sendSms(sendSmsRequestBody)
 
 }

@@ -19,6 +19,7 @@
 		<kotlin.version>1.9.23</kotlin.version>
 		<liquibase.version>4.27.0</liquibase.version>
 		<openapi.version>2.1.0</openapi.version>
+		<faker.version>1.16.0</faker.version>
 	</properties>
 
 	<dependencies>
@@ -59,11 +60,18 @@
 			<artifactId>kotlin-stdlib</artifactId>
 		</dependency>
 
-		<!--	SWAGGER 	-->
+		<!--		SWAGGER-->
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>${openapi.version}</version>
+		</dependency>
+
+		<!--		UTILITY-->
+		<dependency>
+			<groupId>io.github.serpro69</groupId>
+			<artifactId>kotlin-faker</artifactId>
+			<version>${faker.version}</version>
 		</dependency>
 
 		<!--		TEST-->
