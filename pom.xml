@@ -20,6 +20,7 @@
 		<liquibase.version>4.27.0</liquibase.version>
 		<openapi.version>2.1.0</openapi.version>
 		<faker.version>1.16.0</faker.version>
+		<detekt.version>1.23.5</detekt.version>
 	</properties>
 
 	<dependencies>
@@ -109,6 +110,27 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+
+			<plugin>
+				<groupId>com.github.ozsie</groupId>
+				<artifactId>detekt-maven-plugin</artifactId>
+				<version>${detekt.version}</version>
+				<configuration>
+					<config>detekt.yml</config>
+					<report>
+						<report>xml:target/reports/detekt.xml</report>
+					</report>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 

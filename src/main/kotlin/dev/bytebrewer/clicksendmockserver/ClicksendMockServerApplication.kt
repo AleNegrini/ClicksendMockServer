@@ -6,6 +6,7 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class ClicksendMockServerApplication
 
+@Suppress("SpreadOperator")
 fun main(args: Array<String>) {
 	runApplication<ClicksendMockServerApplication>(*args)
 }

@@ -35,6 +35,7 @@ class SmsControllerV3(
         ]
     )
     @PostMapping("send")
-    fun sendSms(@RequestBody sendSmsRequestBody: SendSmsRequestBody): SendSmsResponse = smsService.sendSms(sendSmsRequestBody)
+    fun sendSms(@RequestBody sendSmsRequestBody: SendSmsRequestBody): SendSmsResponse =
+        smsService.sendSms(sendSmsRequestBody)
 
 }

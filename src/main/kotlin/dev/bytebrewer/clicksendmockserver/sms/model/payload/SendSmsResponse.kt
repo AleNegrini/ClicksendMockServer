@@ -8,6 +8,7 @@ import java.math.BigDecimal
  * Send SMS Endpoint returning object
  * Reference Link: https://developers.clicksend.com/docs/rest/v3/#send-sms
  */
+@Suppress("ConstructorParameterNaming")
 data class SendSmsResponse (
     val httpCode: HttpStatusCode,
     val responseCode: ResponseCode,

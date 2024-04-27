@@ -8,6 +8,7 @@ import io.github.serpro69.kfaker.Faker
 import org.springframework.http.HttpStatusCode
 import java.math.BigDecimal
 
+@Suppress("MagicNumber")
 fun Faker.successSendSmsResponse(body: SendSmsRequestBody): SendSmsResponse {
 
     val fakeMessages: List<SendSmsResponse.Data.MessageResponse> = body.messages.map {
@@ -30,6 +31,7 @@ fun Faker.successSendSmsResponse(body: SendSmsRequestBody): SendSmsResponse {
     )
 }
 
+@Suppress("MagicNumber")
 fun Faker.messageResponse(sms: SmsDto): SendSmsResponse.Data.MessageResponse {
     return SendSmsResponse.Data.MessageResponse(
         direction = "out",
