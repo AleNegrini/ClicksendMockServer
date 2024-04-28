@@ -30,9 +30,9 @@ We welcome your pull requests! Here's a general outline of the process:
 Please follow our [coding guidelines](https://github.com/AleNegrini/ClicksendMockServer/blob/main/README.md) when contributing code to this project.
 
 ## Additional Resources
-- [Code of Conduct](https://github.com/AleNegrini/ClicksendMockServer/blob/main/CODE_OF_CONDUCT.md)
+- [Code of Conduct](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/CODE_OF_CONDUCT.md)
 - [Issue Tracker](https://github.com/AleNegrini/ClicksendMockServer/issues)
-- [Coding Guidelines](https://github.com/AleNegrini/ClicksendMockServer/blob/main/README.md)
-- [License](https://github.com/AleNegrini/ClicksendMockServer/blob/main/LICENSE)
+- [Coding Guidelines](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/README.md)
+- [License](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/LICENSE)
 
 Thank you for contributing to _Clicksend Mock Server_!

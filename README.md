@@ -48,8 +48,8 @@ Any deviations from these guidelines will result in build failures, ensuring tha
 
 ## Contributing
 
-Contributions to the Clicksend Mock Server project are welcome! If you encounter any bugs, have suggestions for improvements, or would like to contribute new features, please open an issue or submit a pull request following the guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions to the Clicksend Mock Server project are welcome! If you encounter any bugs, have suggestions for improvements, or would like to contribute new features, please open an issue or submit a pull request following the guidelines outlined in [CONTRIBUTING.md](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to modify and distribute this code as you see fit. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the [MIT License](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/LICENSE). You are free to modify and distribute this code as you see fit. See the [LICENSE](https://github.com/AleNegrini/ClicksendMockServer/blob/main/.github/LICENSE) file for more details.
